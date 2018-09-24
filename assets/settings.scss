@@ -1,0 +1,55 @@
+@charset 'utf-8';
+
+/*
+* Color global settings
+*/
+
+//Highlight
+$featuredColor: #1ce9bb;
+
+//Boxes
+$mainBackgroundColor: #0b192d;
+$mainForegroundColor: #3c92ca;
+
+//Text
+$inactiveTextColor: #868686;
+$defaultTextColor: #ffffff;
+$inverseTextColor: #000000;
+$detailColorSoft: #bebebe;
+$detailColorHeavy: #868686;
+
+
+/*
+* Font global settings
+*/
+
+$defaultFont: Avenir;
+$defaultFontBold: "Avenir Bold";
+$defaultFontHeavy: "Avenir Heavy";
+
+@font-face {
+  font-family: "Avenir Roman";
+  src: url("~/assets/fonts/AvenirLTStd-Roman.otf");
+}
+
+@font-face {
+  font-family: "Avenir Bold";
+  src: url("~/assets/fonts/AvenirLTStd-Black.otf");
+}
+
+@font-face {
+  font-family: "Avenir";
+  src: url("~/assets/fonts/AvenirLTStd-Book.otf");
+}
+
+@font-face {
+  font-family: "Avenir Heavy";
+  src: url("~/assets/fonts/AvenirLTStd-Heavy.otf");
+}
+
+@font-face {
+  font-family: "Avenir Oblique";
+  src: url("~/assets/fonts/AvenirLTStd-Oblique.otf");
+}
+
+

@@ -1,0 +1,16 @@
+/*
+* CSS default  
+*
+* BLOCKS - ELEMENTS - MODIFIERS
+* 
+*/
+
+* {
+  font-family: $defaultFont;
+  font-size: 15px;	
+  color: $defaultTextColor;
+}
+
+i:hover {
+  color: $featuredColor;
+}
