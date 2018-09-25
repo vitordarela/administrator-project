@@ -1,6 +1,6 @@
 <template>
   <el-container class="mainWrapper" direction="vertical">
-    <base-header />
+    <layout-header />
     <el-main>
       <div>
         <h1 class="title">
@@ -8,25 +8,18 @@
         </h1>
       </div>
     </el-main>
-    <base-footer />
+    <layout-footer />
   </el-container>
 </template>
 
 <script>
-import BaseHeader from '~/components/BaseHeader.vue'
-import BaseFooter from '~/components/BaseFooter.vue'
+import LayoutHeader from '~/components/layout/Header.vue'
+import LayoutFooter from '~/components/layout/Footer.vue'
 
 export default {
   components: {
-    BaseHeader,
-    BaseFooter,
+    LayoutHeader,
+    LayoutFooter,
   }
 }
 </script>
-
-<style lang="scss">
-
-
-
-</style>
-

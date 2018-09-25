@@ -11,12 +11,12 @@
 
       <el-col :span="8" class="HeaderWrapper-TopBar-CenterSide">
         <!-- Search Component -->
-        <util-search-input class="HeaderWrapper-TopBar-CenterSide-UtilSearchInput"/>
+        <search-input class="HeaderWrapper-TopBar-CenterSide-UtilSearchInput"/>
       </el-col>
 
       <el-col :span="8" class="HeaderWrapper-TopBar-RightSide">
         <!-- Top Menu Component -->
-        <util-top-menu />
+        <top-menu />
       </el-col>
 
     </el-row>
@@ -67,13 +67,13 @@
 </style>
 
 <script>
-import UtilSearchInput from '~/components/UtilSearchInput.vue'
-import UtilTopMenu from '~/components/UtilTopMenu.vue'
+import SearchInput from '~/components/layout/header/SearchInput.vue'
+import TopMenu from '~/components/layout/header/TopMenu.vue'
 
 export default {
   components: {
-    UtilSearchInput,
-    UtilTopMenu,
+    SearchInput,
+    TopMenu,
   }
 }
 </script>
