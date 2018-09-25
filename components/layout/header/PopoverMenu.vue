@@ -1,7 +1,7 @@
 <template>
   <div>
     <el-popover
-      placement="top-start"
+      placement="top"
       class="WrapperPopOver"
       @show="PopOverChannelOpenned=true"
       @hide="PopOverChannelOpenned=false"
