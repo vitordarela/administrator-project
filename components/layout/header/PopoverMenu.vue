@@ -1,5 +1,6 @@
 <template>
   <div>
+    <!-- Popover Wrapper -->
     <el-popover
       placement="top"
       class="WrapperPopOver"
@@ -8,6 +9,7 @@
       transition="el-fade-in-linear"
       popper-class="PopOverDialog"
       >
+      <!-- Popover Dialog -->
         <ul>
           <li>                      
             <span 
@@ -60,7 +62,8 @@
             </i>              
           </li>                                    
         </ul>
-
+        
+        <!-- Popover Button -->
         <el-button slot="reference" >
             <span  
               class="WrapperPopOver-ProfilePhoto"
@@ -71,6 +74,7 @@
               v-bind:class="{ 'WrapperPopOver-Arrow--down': PopOverChannelOpenned }" >
             </i>                           
         </el-button>
+
     </el-popover>  
   </div>
 </template>

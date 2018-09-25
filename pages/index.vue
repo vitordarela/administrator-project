@@ -1,6 +1,10 @@
 <template>
   <el-container class="mainWrapper" direction="vertical">
+    
+    <!-- Header -->
     <layout-header />
+
+    <!-- Main -->
     <el-main>
       <div>
         <h1 class="title">
@@ -8,7 +12,10 @@
         </h1>
       </div>
     </el-main>
+
+    <!-- Footer -->
     <layout-footer />
+
   </el-container>
 </template>
 

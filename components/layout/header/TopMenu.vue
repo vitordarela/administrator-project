@@ -1,8 +1,14 @@
 <template>
   <div class="MenuWrapper">
-    <i
-      class="el-icon-bell el-input__icon MenuWrapper-IconNotification">
-    </i> 
+    
+    <!-- Notification -->
+    <el-badge :value="2" :max="15" :hidden="false" class="MenuWrapper-Notification">
+      <i
+        class="el-icon-bell el-input__icon MenuWrapper-IconNotification">
+      </i> 
+    </el-badge>
+
+    <!-- PopoverMenu Component -->
     <popover-menu /> 
   </div>
 </template>
@@ -11,23 +17,32 @@
  
 .MenuWrapper {
     position: relative;
-    width: 120px;
+    width: 150px;
     display: inline-block;  
 
   &-IconNotification {
-    font-size: 25px;
+    font-size: 30px;
     cursor: pointer;
     color: $defaultTextColor;
-    position: absolute;
-    left: 0;
 
     &:hover {
       color: $featuredColor;
     }
   }
+
+  &-Notification {
+    position: absolute;
+    left: 0; 
+  }
 }
+</style>
+
+<style lang="scss">
+
+  .MenuWrapper-Notification .el-badge__content { font-size: 10px; }
 
 </style>
+
 
 <script>
 
