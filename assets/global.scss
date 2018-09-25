@@ -7,10 +7,6 @@
 
 * {
   font-family: $defaultFont;
-  font-size: 15px;	
+  font-size: $fontSizePrimary;	
   color: $defaultTextColor;
-}
-
-i:hover {
-  color: $featuredColor;
 }

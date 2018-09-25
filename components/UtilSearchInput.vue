@@ -65,7 +65,7 @@
   width: 100%;
   background-color: $mainBackgroundColor;
   border: 1px solid $mainBackgroundColor;
-  font-size: 14px;
+  font-size: $fontSizeSecondary;
   text-align: center;
   padding: 25px;
   color: $inactiveTextColor;
