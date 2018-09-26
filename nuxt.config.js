@@ -43,7 +43,8 @@ module.exports = {
   */
   css: [
     'element-ui/lib/theme-chalk/index.css',
-    '@/assets/reset.css'
+    '@/assets/reset.css',
+    'swiper/dist/css/swiper.css',
   ],
 
   /**
@@ -69,7 +70,9 @@ module.exports = {
   * Plugins exports
   */  
   plugins: [
-    '@/plugins/element-ui'
+    '@/plugins/element-ui',
+    '@/plugins/nuxt-swiper-plugin',
+    { src: '~/plugins/swiper.min.js', ssr: false }
   ],    
 
 }

@@ -5,9 +5,9 @@
     <layout-header />
 
     <!-- Main -->
-    <el-main>
+    <el-main class="mainContainer">
       <div>
-        <h1 class="title">
+        <h1 >
           zoome-web
         </h1>
       </div>
@@ -30,3 +30,10 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+.mainContainer {
+  height: 500px;
+}
+</style>
+
