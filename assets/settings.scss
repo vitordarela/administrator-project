@@ -10,26 +10,41 @@ $featuredColorHighlighted: #29806d;
 $featuredColorSecondary: #ffffff;
 $highlightColor: #3c92ca;
 
+.featuredColor {
+  color: $featuredColor;
+}
+.featuredColorHighlighted {
+  color: $featuredColorHighlighted;
+}
+.featuredColorSecondary {
+  color: $featuredColorSecondary;
+}
+.highlightColor {
+  color: $highlightColor;
+}
+
 //Boxes
-$mainBackgroundColor: #0b192d;
-$mainBackgroundColorSecondary: #0B192D;
+$mainBackgroundColor: #1a3148; //#132848; 
+$mainBackgroundColorSecondary: #0b192d;
+$mainBackgroundColorTertiary: #071222;
 
 //Text
 $inactiveTextColor: #868686;
 $defaultTextColor: #ffffff;
-$inverseTextColor: #000000;
+$inverseTextColor: #333333;
 $detailColorSoft: #bebebe;
 $detailColorHeavy: #868686;
-
 
 /*
 * Font global settings
 */
 
+$fontSizeTitle: 20px;
 $fontSizePrimary: 15px;
 $fontSizeSecondary: 13px;
+$fontSizeTertiary: 11px;
 
-$defaultFont: Avenir;
+$defaultFont: "Avenir";
 $defaultFontBold: "Avenir Bold";
 $defaultFontHeavy: "Avenir Heavy";
 
@@ -58,4 +73,10 @@ $defaultFontHeavy: "Avenir Heavy";
   src: url("~/assets/fonts/AvenirLTStd-Oblique.otf");
 }
 
-
+@mixin clearfix() {
+  &::after {
+    display: block;
+    content: "";
+    clear: both;
+  }
+}

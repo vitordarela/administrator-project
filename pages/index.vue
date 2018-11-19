@@ -8,7 +8,7 @@
     <el-main class="mainContainer">
       <div>
         <h1 >
-          zoome-web
+          Hello Word
         </h1>
       </div>
     </el-main>
@@ -20,13 +20,10 @@
 </template>
 
 <script>
-import LayoutHeader from '~/components/layout/Header.vue'
-import LayoutFooter from '~/components/layout/Footer.vue'
+
 
 export default {
   components: {
-    LayoutHeader,
-    LayoutFooter,
   }
 }
 </script>

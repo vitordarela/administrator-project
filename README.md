@@ -1,6 +1,6 @@
-# zoome-web
+# administrator-project
 
-> Zoome Web
+> VG - Administrator
 
 ## Build Setup
 
