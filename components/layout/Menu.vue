@@ -1,5 +1,5 @@
 <template>
-<div v-on:mouseover="isCollapse = false" v-on:mouseleave="isCollapse = true">
+<div v-on:mouseover="isCollapse = false" v-on:mouseleave="isCollapse = true" style="backgroun">
     <el-menu default-active="2" class="el-menu-vertical-demo" :collapse="isCollapse" @mouseover="isCollapse = true" @mouseleave="isCollapse = false">
       <el-submenu index="1">
         <template slot="title">
@@ -55,7 +55,9 @@ export default {
 .el-menu-vertical-demo:not(.el-menu--collapse) {
     width: 200px;
     min-height: 400px;
+    
   }
+
 
 
 

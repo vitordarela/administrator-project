@@ -5,7 +5,46 @@
      <!-- Header -->
     <layout-header />
 
-    <el-main>Main</el-main>
+    <el-main>
+      <el-row>
+         <el-col>
+        <b-card-group deck
+                      class="mb-3">
+            <b-card bg-variant="primary"
+                    text-variant="white"
+                    header="Primary"
+                    class="text-center">
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </b-card>
+            <b-card bg-variant="secondary"
+                    text-variant="white"
+                    header="Secondary"
+                    class="text-center">
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </b-card>
+            <b-card bg-variant="success"
+                    text-variant="white"
+                    header="Success"
+                    class="text-center">
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </b-card>
+            <b-card bg-variant="success"
+                    text-variant="white"
+                    header="Success"
+                    class="text-center">
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </b-card>
+            <b-card bg-variant="success"
+                    text-variant="white"
+                    header="Success"
+                    class="text-center">
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </b-card>
+        </b-card-group>
+        </el-col>
+      </el-row>
+      
+    </el-main>
     <el-footer>Footer</el-footer>
   </el-container>
 </el-container>
@@ -16,10 +55,12 @@ import LayoutHeader from '~/components/layout/Header.vue'
 import LayoutFooter from '~/components/layout/Footer.vue'
 import LayoutMenu from '~/components/layout/Menu.vue'
 
+
 export default {
    data() {
       return {
-        isCollapse: true
+        isCollapse: true,
+
       };
     },
   components: {
@@ -32,6 +73,13 @@ export default {
 
 <style lang="scss" scoped>
 
+  .el-row {
+    margin-bottom: 20px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
 .el-menu-vertical-demo:not(.el-menu--collapse) {
     width: 200px;
     min-height: 400px;
@@ -43,32 +91,7 @@ export default {
     text-align: center;
     line-height: 60px;
   }
-  
-  .el-aside {
-    background-color: #D3DCE6;
-    color: #333;
-    text-align: center;
-    line-height: 200px;
-  }
-  
-  .el-main {
-    background-color: #E9EEF3;
-    color: #333;
-    text-align: center;
-    line-height: 160px;
-  }
-  
-  body > .el-container {
-    margin-bottom: 40px;
-  }
-  
-  .el-container:nth-child(5) .el-aside,
-  .el-container:nth-child(6) .el-aside {
-    line-height: 260px;
-  }
-  
-  .el-container:nth-child(7) .el-aside {
-    line-height: 320px;
-  }
+
+
 </style>
 

@@ -29,6 +29,7 @@ module.exports = {
   modules: [
     'nuxt-sass-resources-loader',
     'bootstrap-vue/nuxt'
+
   ],
 
   /**
@@ -73,7 +74,8 @@ module.exports = {
   plugins: [
     '@/plugins/element-ui',
     '@/plugins/nuxt-swiper-plugin',
-    { src: '~/plugins/swiper.min.js', ssr: false }
+    { src: '~/plugins/swiper.min.js', ssr: false },
+    '@/plugins/font-awesome',
   ],    
 
 }
