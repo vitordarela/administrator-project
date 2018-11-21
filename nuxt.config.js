@@ -19,7 +19,7 @@ module.exports = {
       { hid: 'description', name: 'description', content: 'VG - Administrator' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/logo.png' }
     ]
   },
 
@@ -27,7 +27,8 @@ module.exports = {
   * SASS/SCSS setting module
   */  
   modules: [
-    'nuxt-sass-resources-loader'
+    'nuxt-sass-resources-loader',
+    'bootstrap-vue/nuxt'
   ],
 
   /**
