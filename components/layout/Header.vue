@@ -2,6 +2,7 @@
      <b-navbar toggleable="md" type="dark" variant="info">
 
         <b-navbar-brand href="#"><font-awesome-icon icon="home" /> Home</b-navbar-brand>
+        <b-navbar-brand href="#"><i class="el-icon-date"></i> Reminder</b-navbar-brand>
         
         <b-collapse is-nav id="nav_collapse" >
           <b-navbar-nav class="ml-auto">
@@ -44,6 +45,11 @@ export default {
 
 <style lang="scss" scoped>
 
+.icons i,.icons svg {
+   color: #2759AE;
+}
+
+.svg {color: blue;}
  .el-header {
     background-color: #B3C0D1;
     color: #333;
@@ -53,15 +59,15 @@ export default {
 
   .bg-info {
     background-color: #B3C0D1 !important;
-    color: rgb(0, 0, 0);
+     color: #07122273;
 }
 
 .navbar-dark .navbar-brand {
-    color: rgb(0, 0, 0);
+   color: #07122273
 }
 
 .navbar-dark .navbar-nav .nav-link {
-    color: rgb(0, 0, 0);
+    color: #07122273
 }
   
 </style>

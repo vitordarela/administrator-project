@@ -3,12 +3,11 @@
     <el-menu default-active="2" class="el-menu-vertical-demo" :collapse="isCollapse" @mouseover="isCollapse = true" @mouseleave="isCollapse = false">
       <el-submenu index="1">
         <template slot="title">
-          <i class="el-icon-location"></i>
-          <span slot="title">Navigator One</span>
+          <i class="el-icon-document"></i>
+          <span slot="title">Invoice</span>
         </template>
         <el-menu-item-group>
-          <span slot="title">Group One</span>
-          <el-menu-item index="1-1">item one</el-menu-item>
+          <el-menu-item index="1-1"><i class="el-icon-tickets"></i>Bills to pay</el-menu-item>
           <el-menu-item index="1-2">item two</el-menu-item>
         </el-menu-item-group>
         <el-menu-item-group title="Group Two">
